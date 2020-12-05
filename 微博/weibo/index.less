@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@total-width:750;
+@center-width:748/40rem;
+@topbar-height:150/40rem;
+//设置根元素
+html{
+    //设置rem的比值
+    font-size: 100vw/@total-width*40;
+    background-color:#ffffff;
+    width: @center-width;
+}
+a{
+    color:#9e8e8e;
+    text-decoration: none;
+}
+//设置头部的top-bar
+.top-bar{
+    background-color: #fafafa;
+    display: flex;
+    //设置高度
+    height: @topbar-height;
+    // 设置宽度
+    width: @center-width;
+    .user,.edit,.email{
+        height: @topbar-height;
+        line-height: @topbar-height;
+    }
+    .user,.email,.edit{
+        padding-left: 10/40rem;
+        padding-right: 10/40rem;
+    }
+    .search-box{
+        i,input{
+            line-height: 60/40rem;
+            margin-left: 20/40rem;
+            float: left;
+        }
+        input{
+            font-size: 40/40rem;
+            background-color: #fafafa;
+            border: 0px;
+            width: 400/40rem;
+        }
+        input:hover{
+            outline:none
+        }
+        border-radius:20/40rem;
+        margin-top: 40/40rem;
+        margin-bottom: 40/40rem;
+        line-height: @topbar-height;
+        border: 1/40rem #6fa9bb solid;
+        width:500/40rem;
+    }
+
+}
+// 设置菜单栏
+.nav{
+    width:@center-width;
+    background-color:  #fafafa;
+    border-bottom: solid 2/40rem #e6e6e6;
+    .nav-inner{
+        display: flex;
+        li{
+            list-style-type: none;
+            flex:auto;
+            font-size: 30/40rem;
+        }
+    }
+}
+// 设置微博文章
+.article{
+    width:@center-width;
+    margin-bottom: 2/40rem;
+    border-bottom: solid 3/40rem #e6e6e6;
+    // 博客信息
+    .blogger{
+        width: @center-width;
+        height: 100/40rem;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            display: flex;
+        }
+        // 设置头像
+        a{
+            width:90/40rem;
+            height:90/40rem;
+            margin-left: 10/40rem;
+            margin-right: 20/40rem;
+            img{
+                width:90/40rem;
+                height:90/40rem;
+            }
+            overflow: hidden;
+            border-radius: 50%;
+            border:solid 1/40rem gray;
+        }
+        // 设置用户名和发布时间
+        .imf{
+            font-size: 30/40rem;
+            color:#333;
+            .name{
+                font-weight: 500;
+                i{
+                    color:rgb(201, 28, 28)
+                }
+            }
+            .time{
+                font-weight: 200;
+            }
+
+        }
+        .follow{
+            font-size: 25/40rem;
+            line-height: 50/40rem;
+            border:solid 2/40rem #e6e6e6;
+            margin:20/40rem 30/40rem 20/40rem 0;
+            i{
+                width: 20/40rem;
+            }
+            font-weight: 400;
+        }
+    }
+    // 文章部分
+    .weibo-og{
+        width: @center-width;
+        .weibo-text{
+            width: @center-width;
+            color:#333;
+            font-size: 25/40rem;
+        }
+        .img-box{
+            width: @center-width;
+            height:400/40rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .footer{
+            width: @center-width;
+            display: flex;
+            justify-content: space-between;
+            div{
+                display:flex;
+                margin: 0 10/40rem 0 10/40rem;
+                color:#555963;
+                font-size: 30/40rem;
+                h4{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

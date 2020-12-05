@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #ffffff;
+  width: 18.7rem;
+}
+a {
+  color: #9e8e8e;
+  text-decoration: none;
+}
+.top-bar {
+  background-color: #fafafa;
+  display: flex;
+  height: 3.75rem;
+  width: 18.7rem;
+}
+.top-bar .user,
+.top-bar .edit,
+.top-bar .email {
+  height: 3.75rem;
+  line-height: 3.75rem;
+}
+.top-bar .user,
+.top-bar .email,
+.top-bar .edit {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.top-bar .search-box {
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 3.75rem;
+  border: 0.025rem #6fa9bb solid;
+  width: 12.5rem;
+}
+.top-bar .search-box i,
+.top-bar .search-box input {
+  line-height: 1.5rem;
+  margin-left: 0.5rem;
+  float: left;
+}
+.top-bar .search-box input {
+  font-size: 1rem;
+  background-color: #fafafa;
+  border: 0px;
+  width: 10rem;
+}
+.top-bar .search-box input:hover {
+  outline: none;
+}
+.nav {
+  width: 18.7rem;
+  background-color: #fafafa;
+  border-bottom: solid 0.05rem #e6e6e6;
+}
+.nav .nav-inner {
+  display: flex;
+}
+.nav .nav-inner li {
+  list-style-type: none;
+  flex: auto;
+  font-size: 0.75rem;
+}
+.article {
+  width: 18.7rem;
+  margin-bottom: 0.05rem;
+  border-bottom: solid 0.075rem #e6e6e6;
+}
+.article .blogger {
+  width: 18.7rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.article .blogger .left {
+  display: flex;
+}
+.article .blogger a {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 0.025rem gray;
+}
+.article .blogger a img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.article .blogger .imf {
+  font-size: 0.75rem;
+  color: #333;
+}
+.article .blogger .imf .name {
+  font-weight: 500;
+}
+.article .blogger .imf .name i {
+  color: #c91c1c;
+}
+.article .blogger .imf .time {
+  font-weight: 200;
+}
+.article .blogger .follow {
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  border: solid 0.05rem #e6e6e6;
+  margin: 0.5rem 0.75rem 0.5rem 0;
+  font-weight: 400;
+}
+.article .blogger .follow i {
+  width: 0.5rem;
+}
+.article .weibo-og {
+  width: 18.7rem;
+}
+.article .weibo-og .weibo-text {
+  width: 18.7rem;
+  color: #333;
+  font-size: 0.625rem;
+}
+.article .weibo-og .img-box {
+  width: 18.7rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.article .weibo-og .img-box img {
+  width: 100%;
+}
+.article .weibo-og .footer {
+  width: 18.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.article .weibo-og .footer div {
+  display: flex;
+  margin: 0 0.25rem 0 0.25rem;
+  color: #555963;
+  font-size: 0.75rem;
+}
+.article .weibo-og .footer div h4 {
+  font-weight: 500;
+}
